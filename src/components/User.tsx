@@ -51,7 +51,7 @@ const User = ({userId}: { userId: number }) => {
   }, [data])
 
   const fetchUser = () => {
-    const url:string = `https://jsonplaceholder.typicode.com/users?id=${userId}`;
+    const url:string = `${process.env.REACT_APP_API_URL}/users?id=${userId}`;
     fetchData(url);
   }
   

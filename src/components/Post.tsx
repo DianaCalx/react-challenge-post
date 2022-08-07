@@ -17,7 +17,7 @@ const Post = () => {
   }, []);
 
   const fetchPost = () => {
-    const url:string = `https://jsonplaceholder.typicode.com/posts?id=${id}`;
+    const url:string = `${process.env.REACT_APP_API_URL}/posts?id=${id}`;
     fetchData(url);   
   }
 

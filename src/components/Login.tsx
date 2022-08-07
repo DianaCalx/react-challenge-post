@@ -35,7 +35,7 @@ const Login = () => {
 
     // eslint-disable-next-line no-useless-escape
     const regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    const url: string = `https://jsonplaceholder.typicode.com/users?email=${email}`;
+    const url: string = `${process.env.REACT_APP_API_URL}/users?email=${email}`;
  
     if(!email){
       addAlert('Email cannot be empty');

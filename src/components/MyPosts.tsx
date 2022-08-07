@@ -25,7 +25,7 @@ const MyPosts = () => {
   
 
   const fetchPostsUser = () => {
-    const url:string = `https://jsonplaceholder.typicode.com/posts?userId=${user.id}`;
+    const url:string = `${process.env.REACT_APP_API_URL}/posts?userId=${user.id}`;
     fetchData(url);     
   }
 

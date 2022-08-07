@@ -23,7 +23,7 @@ const Comments = ({postId}: {postId:number}) => {
   
 
   const fetchComments = () => {
-    const url:string = `https://jsonplaceholder.typicode.com/comments?postId=${postId}`;
+    const url:string = `${process.env.REACT_APP_API_URL}/comments?postId=${postId}`;
     fetchData(url);
   }
 
