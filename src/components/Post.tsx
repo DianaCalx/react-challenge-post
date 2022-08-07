@@ -14,6 +14,7 @@ const Post = () => {
     if(id){
       fetchPost();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchPost = () => {
