@@ -21,7 +21,15 @@ Task management app allows you to browse and add tasks to users.
 
 ## Application
 
+### Login
 ![Login](https://github.com/DianaCalx/react-challenge-post/blob/develop/public/login.jpg?raw=true)
+
+
+### View of My Posts
 ![View of My Posts](https://github.com/DianaCalx/react-challenge-post/blob/develop/public/myPostsView.jpg?raw=true)
+
+### View of All Posts
 ![View of All Posts](https://github.com/DianaCalx/react-challenge-post/blob/develop/public/allPostsView.jpg?raw=true)
+
+### View of a Single Post
 ![View of a Single Post](https://github.com/DianaCalx/react-challenge-post/blob/develop/public/postView.jpg?raw=true)
