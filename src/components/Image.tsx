@@ -1,6 +1,6 @@
 import useFetch from '../hooks/useFetch';
 import { useEffect } from 'react';
-import { ImageS } from '../styles/components';
+import { ImageS, Picture } from '../styles/components';
 
 const Image = ({ isSquare }: { isSquare?: boolean }) => {
   const { data, fetchData } = useFetch();
@@ -18,13 +18,13 @@ const Image = ({ isSquare }: { isSquare?: boolean }) => {
   const urlImage = 'https://purr.objects-us-east-1.dream.io/i/y31D9.jpg';
 
   return (
-    <picture>
+    <Picture>
       <ImageS 
         src={data ? data.file : urlImage} 
         alt='Random'
         isSquare={isSquare}
       />
-    </picture>
+    </Picture>
   )
 }
 

@@ -225,10 +225,10 @@ export const ImageS = styled.img<ImageProps>`
     width: 100%;
     height: 20rem;
   `}
+`
 
-  @media screen and (min-width: 768px){
-    
-  }
+export const Picture = styled.picture`
+  max-width: 100%;
 `
 
 export const DivData = styled.div`
