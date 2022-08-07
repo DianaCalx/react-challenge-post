@@ -33,3 +33,7 @@ Task management app allows you to browse and add tasks to users.
 
 ### View of a Single Post
 ![View of a Single Post](https://github.com/DianaCalx/react-challenge-post/blob/develop/public/postView.jpg?raw=true)
+
+## Additional Information
+Set `REACT_APP_API_URL` variable in the `.env` file with [Backend Direct Endpoint](https://jsonplaceholder.typicode.com)
+**Deploy to production** [https://ravn-challenge-posts.netlify.app/](https://ravn-challenge-posts.netlify.app/).
