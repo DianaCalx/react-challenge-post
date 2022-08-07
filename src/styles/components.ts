@@ -50,8 +50,12 @@ export const Button = styled.input`
 
 export const AppContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+  }
 `
 export const AsideContainer = styled.div`
   background-color: ${v.shadowColor};
@@ -59,7 +63,11 @@ export const AsideContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
-  width: 15%;
+  width: 100%;
+
+  @media screen and (min-width: 768px){
+    width: 15%;
+  }
 `
 
 interface ButtonProps {
@@ -72,7 +80,7 @@ export const ButtonPost = styled.button<ButtonProps>`
   font-weight: bold;
   border: none;
   background-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 
   &:hover{
@@ -82,6 +90,10 @@ export const ButtonPost = styled.button<ButtonProps>`
   ${props => props.active && css`
     border-bottom: 5px solid${v.tertiaryColor};
   `}
+
+  @media screen and (min-width: 768px){
+    margin-bottom: 2rem;
+  }
 `
 
 export const ButtonLogout = styled.button`
@@ -90,7 +102,7 @@ export const ButtonLogout = styled.button`
   font-weight: bold;
   border: none;
   background-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 `
 
@@ -108,7 +120,11 @@ export const InfoContainer = styled.div`
   gap: 1rem;
   border: 1px solid ${v.shadowColor};
   padding: 1rem;
-  width: 75%;
+  width: 100%;
+
+  @media screen and (min-width: 768px){
+    width: 75%;
+  }
 `
 
 export const UserContainer = styled.div`
@@ -200,15 +216,19 @@ interface ImageProps {
 
 export const ImageS = styled.img<ImageProps>`
   border-radius: 50%;
-  object-fit: fill;
+  object-fit: cover;
   width: 6rem;
   height: 6rem;
   object-position: center;
   ${props => props.isSquare && css`
     border-radius: 0%;
-    width: 40rem;
+    width: 100%;
     height: 20rem;
   `}
+
+  @media screen and (min-width: 768px){
+    
+  }
 `
 
 export const DivData = styled.div`
@@ -232,7 +252,12 @@ export const Link = styled(DefaultLink)`
 export const Flex = styled.div`
   flex: 1;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
+
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+  }
 `
 
 export const CommentFlex = styled.div`
