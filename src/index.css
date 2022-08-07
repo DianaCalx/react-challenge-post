@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #B2A4FF;
-  font-family: 'Roboto',sans-serif, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  font-family: 'Didot',sans-serif, 'Oxygen';
 }
 
 *, *:before, *:after {
