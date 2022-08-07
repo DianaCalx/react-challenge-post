@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Description
 
-Task management app allows you to browse and add tasks to users.
+This application shows posts information
 
 ## Application
 
